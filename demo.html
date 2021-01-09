@@ -1,9 +1,234 @@
-<h2>ddd git ass</h2>
+<!-- <h2>ddd git ass</h2>
 <script>
     
     let fun_one=()=>{
       return "functions";
+    };
       console.log(fun_one);
-      console.log(fun_one());
-}
+      console.log(fun_one()); 
+
+</script> -->
+<!-- <script>
+    let arr = [];
+    function fun_one(){
+        return "hello";
+    };
+    for(var i=0;i<5;i++){
+        arr.push( fun_one );
+    };
+    arr.forEach((element,index)=>{
+        console.log( element() );
+    });
+</script>
+<script>
+    function class_one(){
+this.sub_one="malli";
+this.sub_two="siva";
+this.sub_three="hari";
+};
+let obj=new class_one();
+console.log(obj.sub_one,obj.sub_two,obj.sub_three);
+ 
+    
+</script> -->
+<!-- 
+<script>
+    function fun_one(){
+   this.one="social";
+   this.two="telugu";
+   this. three="eng";
+    };
+    let obj=newfun_one();
+    console.log(obj.one,obj.two,obj.three);
+</script> -->
+
+<!-- <script>
+    function fun_one(arg1,arg2,arg3){
+        this.a="arg1";
+        this.b="arg2";
+        this.c="arg3";
+    };
+    let obj1=new fun_one("samsung","realme","moto");
+    console.log(obj1.a,obj1.b,obj1.c);
+    let obj2=new fun_one("samsung","realme","moto");
+    console.log(obj2.a,obj2.b,obj2.c);
+    const  obj3=new fun_one("samsung","realme","moto");
+    console.log(obj3.c,obj3.b,obj3.a);
+    
+</script> -->
+
+<!-- <script>
+    function class_one(){
+       this.geta=function(){
+         return "reactjs" ;
+       };
+       this.getb=function(){
+           return "angular";
+       };
+       this.getc=function(){
+           return "NodeJS";
+       };
+    };
+let obj=new class_one();
+console.log(obj.geta(),obj.getb(), obj.getc());
+    
+</script> -->
+<!-- 
+<script>
+    function class_one() {
+
+    };
+    class_one.prototype.a = "mobile";
+    function class_two() {
+
+    };
+    class_two.prototype = Object.create(class_one.prototype);   //mobile pen
+    class_two.prototype.b = "pen";
+    let obj = new class_two();
+    console.log(obj.a, obj.b);
+</script> -->
+<!-- <script>
+    function class_one() {
+
+    };
+    class_one.prototype.a = "mobile";
+    function class_two() {
+
+    };
+    class_two.prototype = Object.create(class_one.prototype);   //mobile pen
+    class_two.prototype.b = "pen";
+    let obj = new class_two();
+    console.log(obj.a, obj.b);
+</script> -->
+
+
+<!-- <script>
+    function *class_one(){
+         yield "hello_one";
+         yield "hello_two"; 
+         yield "hello_three";
+         yield "hello_four";
+         yield "hello_five";
+    };
+    let cursor=class_one();                         
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next()); 
+</script> -->
+
+
+<!-- <script>
+    function *fun_one(){
+            yield "Hello_1";
+    };
+    function *fun_two(){
+        yield "Hello_2";
+    };
+    function *fun_three(){
+        yield "Hello_3";
+    };
+    function *myfun(){
+        yield *fun_two();
+        yield *fun_three();
+        yield *fun_one();
+
+    };
+    let cursor= myfun();
+    console.log(cursor.next() );
+    console.log(cursor.next() );
+    console.log(cursor.next() );
+    console.log(cursor.next() );
+
+</script> -->
+
+<!-- 
+<script>
+    function* class_one(){
+      yield 100;
+      yield 200;
+      yield 300;
+      return "hello";
+      yield 400;
+    };
+    let cursor = class_one();
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+</script> -->
+
+
+<!-- <script>
+    function *malli(){
+      yield "one";
+      yield "two";
+      yield "three"
+    };
+    let cursor =malli();
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+</script> -->
+<!-- <script>
+function *siva(){
+  yield 100;
+  yield 200;
+  yield 300;
+  return "hello";
+  yield 400;
+
+    };
+    let cursor =siva();
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+
+</script> -->
+
+<!-- <script>
+    function *Hello_1(){
+    yield "one";
+    };
+    function *Hello_2(){
+    yield "two";
+    };
+    function *Hello_3(){
+        yield "three";
+    };
+    function *my_func(){
+      yield *Hello_2;
+      yield *Hello_3;
+      yield *Hello_1;
+    };
+    let cursor =my_func();
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next ());    
+</script> -->
+
+<script>
+    function *malli(){
+        yield 100;
+        yield 200;
+        yield 300;
+        return "welcome";
+        yield 400;
+    };
+    let cursor =malli();
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
 </script>
