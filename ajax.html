@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+      <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      </head>
+      <body>
+          <script>
+              /*
+               $.ajax( {
+                   method:"GET", 
+                   url:"http://localhost:3000/Balls?_sort=id&_order=desc",
+                   success:(posRes)=>{
+                       console.log(posRes);
+                   },
+                   error:(errRes)=>{
+                    console.log(errRes);
+                   }
+               })
+               */
+
+
+                $.ajax({
+              method:"POST",
+              url:"http://localhost:3000/Balls",
+              data:{
+                  "p_id":13,
+                  "p_name":"Hello1",
+              "p_cost":42345622
+              },
+              success:(posRes)=>{
+                       console.log(posRes);
+                   },
+                   error:(errRes)=>{
+                    console.log(errRes);
+                   } 
+
+                });
+              </script>
+            
+      </body>
+</html>

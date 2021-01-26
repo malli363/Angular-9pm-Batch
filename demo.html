@@ -216,7 +216,7 @@ function *siva(){
     console.log(cursor.next ());    
 </script> -->
 
-<script>
+<!-- <script>
     function *malli(){
         yield 100;
         yield 200;
@@ -231,4 +231,285 @@ function *siva(){
     console.log(cursor.next());
     console.log(cursor.next());
     console.log(cursor.next());
+</script> -->
+
+<!-- <script>
+    function class_one(){
+
+    };
+    class_one.prototype.add = function(arg1, arg2){
+    return arg1+arg2;
+    };
+
+class_one.prototype.add=function(arg1,arg2,arg3){
+  return arg1+arg2+arg3;
+};
+class_one.prototype.add=function(arg1,arg2,arg3,arg4,arg5){
+ return arg1+arg2+arg3+arg4+arg5;
+};
+let obj = new class_one();
+console.log(obj.add(10,10));
+console.log(obj.add(10,10,10));
+console.log(obj.add(10,10,10,10,10));
+</script> -->
+
+
+<!-- <script>
+    let obj={
+     sub_one:"react",
+     sub_two :"angular",
+     sub_three: "NodeJS"
+       
+    };
+    console.log(obj.sub_one,obj.sub_two,obj.sub_three);
+</script> -->
+<!-- <script>
+    let obj={
+        "key_1":"hello_1",
+        "key_2":"hello_2",
+        "key_3":"hello_3",
+    };
+    console.log(typeof obj);       //obj
+
+
+     let str = JSON.stringify(obj);        // string
+     console.log(typeof str);
+
+      let obj2 =JSON.parse(str);     //object
+      console.log(obj2);
+
+</script> -->
+
+<!-- <script>
+    let obj ={
+        f_end:"ReactJS",
+        b_end:"Angular",
+        sub :"Eng"
+    };
+    for(let key in obj){
+          console.log(key, typeof key, obj[key] ); 
+    };
+</script> -->
+
+<!-- <script>
+    let obj={
+        key_1:Hello_1
+    };
+    Object.freeze(obj);
+
+    console.log(obj);       //read
+
+    obj.key2="Hello_2"  //write
+    console.log(obj);
+
+    obj.key_1:"Hello_2"   //update
+    console.log(obj);
+
+    delete obj.key_1;      //delete
+    console.log(obj);
+</script> -->
+
+<!-- <script>
+    let obj= {
+        key1:"hello1"
+    };
+     Object.seal(obj);
+
+
+     console.log(obj.key1);    //read
+
+    
+     obj.key2="hello2"
+     console.log(obj); //write  
+     
+      delete obj.key1;
+      console.log(obj);
+
+      
+     obj.key1="Hello_2";    //update
+     console.log(obj.key1);
+
+</script> -->
+
+<!-- <script>
+    let obj={
+        key1:"Hello1"
+    };
+    Object.defineProperty(obj,"key2", {value:Hello2,writable:false });
+    console.log(obj);
+    obj.key1="welcome";
+    obj.key2="Hi"   ;
+        console.log(obj);
+</script> -->
+
+<!-- <script>
+     let obj={
+         key1:"Hello1"
+     };
+     Object.defineProperties    (obj,{"key2" :{value:"Hello2" ,writable:false},
+                                       "key3": {value:"Hello3", writable:true}});
+                                       console.log(obj);
+obj.key1="welcome1";
+obj.key2="welcome2";
+obj.key3="welcome3";
+console.log(obj);
+
+</script> -->
+
+<!-- <script>
+let obj1={
+        key1:"Hello1"
+    };
+    let obj2 ={
+        ...obj1};
+        console.log(obj1);
+        console.log(obj2);
+</script> -->
+<!-- <script>
+    let config ={
+"Login" : Login
+
+    };
+function Login(){
+ return "hoeel kkk";
+};
+console.log(config.Login() );
+</script> -->
+
+<!-- <script>
+    let db= {
+        "malli" : ()=>{return "welcome....!"},  
+        "bro" : ()=> { return "welcome2....!"},  
+        "sister":()=>{return "welcome2...!"}
+
+    };
+    console.log(db.malli(), db.bro(),db.sister() );
+</script>  -->
+<!-- <script>
+    let arr = [
+        {"p_id":111,"p_name":"p_one","p_cost":10000},
+        {"p_id":222,"p_name":"p_two","p_cost":20000},
+        {"p_id":333,"p_name":"p_three","p_cost":30000},
+        {"p_id":444,"p_name":"p_four","p_cost":40000},
+        {"p_id":555,"p_name":"p_five","p_cost":50000}
+    ];
+    document.write(`
+        <table border="1" 
+               align="center" 
+               cellpadding="10px" 
+               cellspacing="10px">
+            <thead>
+                <tr>
+                    <th>SNO</th>
+                    <th>P_ID</th>
+                    <th>P_NAME</th>
+                    <th>P_COST</th>    
+                </tr>
+            </thead>
+            <tbody>
+    `);
+    arr.forEach((element,index)=>{
+        document.write(`
+            <tr>
+                <td>${index+1}</td>
+                <td>${element.p_id}</td>
+                <td>${element.p_name}</td>
+                <td>${element.p_cost}</td>
+            </tr>
+        `);
+    });
+    document.write(`</tbody></table>`);
 </script>
+ -->
+
+
+<!-- <script>
+    let arr = [{"name":"Afghanistan","topLevelDomain":[".af"],"alpha2Code":"AF","alpha3Code":"AFG","callingCodes":["93"],"capital":"Kabul","altSpellings":["AF","Afġānistān"],"region":"Asia","subregion":"Southern Asia","population":27657145}]  
+    document.write(`
+        <table border="1" 
+               align="center" 
+               cellpadding="10px" 
+               cellspacing="10px">
+            <thead>
+                <tr>
+                    <th>SNO</th>
+                    <th>Name</th>
+                    <th>Capital</th>
+                    <th>Region</th>
+                    <th>Subregion</th>
+                    <th>Populatiopn</th>
+
+                        
+                </tr>
+            </thead>
+            <tbody>
+    `);
+    arr.forEach((element,index)=>{
+            document.write(`<tr>
+                    <td>${index+1}</td>
+                    <td>${element.name}</td>
+                    <td>${element.capital}</td>
+                    <td>${element.region}</td>
+                    <td>${element.subregion}</td>
+                    <td>${element.population}</td>
+                  
+                </tr>`);
+        });
+</script> -->
+
+
+    <!-- <script>
+    function fun_one(...arg1){
+        console.log(arg1);
+    };
+    fun_one("Hellk");
+    fun_one("Hellk","Hello_2");
+    fun_one();
+    fun_one("undefined");
+    fun_one("null");
+    fun_one("undefined","null");
+</script> -->
+
+
+<!-- <script>
+    let fun_one=()=>{
+        return "Hello";
+        
+    
+    };
+
+console.log(fun_one);
+console.log(fun_one() ); 
+    
+</script> -->
+
+<!-- <script>
+    let fun_one=()=>{
+        return "Hello";
+    };
+    console.log(fun_one);
+
+</script> -->
+
+<!-- <script>
+    let fun_five=(param1)=>{
+      console.log("react");
+    };
+</script>  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
