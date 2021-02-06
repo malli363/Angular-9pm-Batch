@@ -5,7 +5,7 @@
 // //     console,log("hello");
 // // }, 3000)
 
-const { isFunctionTypeNode } = require("typescript");
+const { isFunctionTypeNode, LanguageServiceMode } = require("typescript");
 
 // // setInterval(function() {
 // //     console.log("brother");
@@ -125,5 +125,148 @@ return callback(num-3,false);
     
  
  });*/
+//  let arr=[20,30,40]
+//  console.log(arr);
+// arr.push(50);
+
+// console.log(arr);             //[ 20, 30, 40, 50 ] 
+// arr.pop(40);
+// console.log(arr);         //[ 20, 30, 40 ]
+// arr.unshift(10);
+// console.log(arr);             //[ 10, 20, 30, 40 ]
+// arr.shift(10);
+// console.log(arr);           //[ 20, 30, 40 ]
+
+
+
+// let arr=[20,30,40,50]
+// arr.push (100);       //[ 20, 30, 40, 50, 100 ]
+// console.log(arr);
+// arr.pop(100);
+// console.log(arr);       //[ 20, 30, 40, 50 ]
+
+// arr.shift(20);
+// console.log(arr);     //[ 30, 40, 50 ]
+
+// arr.unshift(5);
+// console.log(arr);       //[ 5, 30, 40, 50 ]
+
+// let arr = [10,20,30,40,50,60,70,80,90,100]
+// console.log(arr);  ///[10,20,30,40,50,60,70,80,90,100]
+
+// arr.splice(4,2);
+// console.log(arr);  ////[10, 20, 30,  40,70, 80, 90, 100]
+
+// arr.splice(7,1);
+// console.log(arr);    ////[10,20,30,40,70,80,90]
+ 
+
+// arr.splice(3,2);
+// console.log(arr);     //[ 10, 20, 30, 80, 90 ]
+
+// arr.splice(0,1)
+// console.log(arr); //[ 20, 30, 80, 90 ]
+
+// arr.splice(3,1);
+// console.log(arr);       //[ 20, 30, 80 ]
+
+// arr.splice(1,1);
+// console.log(arr);             //[ 20, 80 ] 
+
+
+
+
+// let arr =[10,20,30,40,50,80,200,324,54,865,345,764];
+// arr.splice(0,1);
+// console.log(arr);   
+
+
+
+// let arr= [10,20,30,40,50,60];
+
+// arr.splice(2,0,30,31,32);
+// console.log(arr);
+
+
+
+
+//findIndex
+
+// let arr=[10,20,30,40,50];
+// console.log(
+//   arr.findIndex((element,index)=>{
+//  return element ===40;
+// })
+// );
+
+
+// console.log(
+//   arr.findIndex((element,index)=>{
+//  return element ===400;
+// })
+// );
+
+
+// let arr2= [10,20,30,40,50]
+// let arr1=[
+//   {"p_id":101,"p_name":"Soap","p_cost":300},
+
+// {"p_id":102,"p_name":"pen","p_cost":450},
+
+// {"p_id":103,"p_name":"Scale","p_cost":500},
+// {"p_id":104,"p_name":"Lapto","p_cost":2000},
+// {"p_id":105,"p_name":"pad","p_cost":800},
+// ];
+// console.log(
+//   arr1.findIndex((element,index)=>{
+
+//       return element.p_id === 105;
+//   })
+// );
+
+// arr2.splice(arr2.findIndex((element,index)=>{       //[ 10, 20, 30, 50 ]
+// return element.p_id   ===104;
+// }),1);
+// console.log(arr2);
+
+
+// arr2.splice(arr2.findIndex((element,index)=>{
+//  return element.p_id===103
+// }),1)
+
+// console.log(arr2);
+
+// let arr1=[10,20,30,40,50,60,70,80,90,100];
+//  console.log(arr1.slice(6,9) );
+
+//  console.log( [...arr1.slice(6,9),...arr1.slice(0,3)])
+
+
+ let arr4= [0,1,2,3,4,5,6,7,8,9,10];
+  let a1 = arr4.slice(7);
+  let a2= arr4.slice(0,5);
+
+let a3=a2.concat(a1);
+console.log(a3);
+console.log([...a2,...a1]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
