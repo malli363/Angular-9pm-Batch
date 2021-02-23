@@ -309,10 +309,14 @@ console.log(" Welcome ".trimEnd().length);//8*/
 // );
 
 
-let obj={"key1":"Hello_1","key2":"Hello_2","key3":"Hello_3","key4":"Hello_4"};
-for(let key in obj){
-console.log(obj [key] );
-};
+const  array = ['a','b','b','c', 'd','e','f','h','i','h','c'];
+[...new Set(array)];
+
+
+
+
+
+
 
 
 
